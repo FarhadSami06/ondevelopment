@@ -5,6 +5,7 @@
 				<meta name="viewport" content="width=device-width, initial-scale=1.0">
 				<title>ON Development Homes</title>
 				<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+				<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine|Cinzel+Decorative">
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 				<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
@@ -97,15 +98,45 @@
 		font-size: 18px;
 		margin: 50px 0;
 	}
+	.contactContainer {
+		min-height: 600px;
+		margin: 0 auto;
+		font-family: 'Cinzel Decorative', cursive;
+	}
 	.contactForm {
 		width: 350px;
-		text-align: center;
-		margin: 0 auto;
+  		font-size: 20px;
+  		margin: 40px 80px 40px 20px;
+		float: left;
 	}
 	.contactForm input, textarea, button {
 		margin-bottom: 30px;
 	}
-
+	.myInfo {
+		margin: 40px 20px 40px 20px;
+  		float: left;
+  		width: 350px;
+		text-align: center;
+	}
+	.myInfo h2 {
+		margin-bottom: 30px;
+	}
+	.myInfo a {
+		text-decoration: none;
+		color: #3A5B92;
+		font-weight: bold;
+		padding: 5px;
+		display: block;
+		margin-bottom: 10px;
+	}
+	.myInfo a:hover {
+		color: #fff;
+		background-color: #3A5B92;
+		margin-bottom: 10px;
+	}
+	.myInfo h4 {
+		color: #3A5B92;
+	}
 
 </style>
 <body>
@@ -124,11 +155,7 @@
 		</div>	
 		</div>
 	</div>
-	<div class="contactContainer">
-		<div class="myInfo">
-			<p>this is a message</p>
-			<h2>Also a message</h2>
-		</div>	
+	<div class="contactContainer container">
 		<div class="contactForm">
 			<form>
 			  <div class="formInfo">
@@ -153,6 +180,13 @@
 			  </div>
 			  <button type="submit" class="btn btn-default">Submit</button>
 			</form>
+		</div>
+		<div class="myInfo">
+			<h2>Email</h2>
+			<a href="mailto:Nassery@ondevelopmenthomes.com">Nassery@ondevelopmenthomes.com</a><br/>
+			<img src="img/ondLogo.png" alt="logo" height="200" width="200" />
+			<h2>Phone</h2>
+			<h4>(818) 887-9390</h4>
 		</div>	
 	</div>
 
