@@ -137,8 +137,61 @@
 	.myInfo h4 {
 		color: #3A5B92;
 	}
+	.portfolioContainer {
+		min-height: 700px;
+	}
 	.pageTitle {
 		margin-bottom: 50px;
+	}
+	.portThumbnail {
+		margin-bottom: 80px;
+	}
+
+
+	
+	.grow img {
+	  height: 300px;
+	  width: 450px;
+
+	  -webkit-transition: all 1s ease;
+		 -moz-transition: all 1s ease;
+		   -o-transition: all 1s ease;
+		  -ms-transition: all 1s ease;
+			  transition: all 1s ease;
+	}
+
+	.grow img:hover {
+	  width: 500px;
+	  height: 333px;
+	}
+	
+	.portThumbnail a.darken {
+		display: inline-block;
+		background: black;
+		padding: 0;
+	}
+
+	.portThumbnail a.darken img {
+		display: block;
+
+		-webkit-transition: all 0.5s linear;
+		   -moz-transition: all 0.5s linear;
+			-ms-transition: all 0.5s linear;
+			 -o-transition: all 0.5s linear;
+				transition: all 0.5s linear;
+	}
+
+	.portThumbnail a.darken:hover img {
+		opacity: 0.8;
+
+	}
+	.pic {
+		border: 4px solid #fff;  
+		overflow: hidden;
+		padding: 0px;
+		height: 300px;
+	  	width: 450px;
+		
 	}
 
 </style>
@@ -158,42 +211,40 @@
 		</div>	
 		</div>
 	</div>
-	<div class="contactContainer container">
-		<h1 class="pageTitle">Contact Us</h1>
-		<div class="contactForm">
-			<form>
-			  <div class="formInfo">
-				<label for="firstName">First Name</label>
-				<input type="text" class="form-control" id="firstName">
-			  </div>
-			  <div class="formInfo">
-				<label for="lastName">Last Name</label>
-				<input type="text" class="form-control" id="lastName">
-			  </div>
-			  <div class="formInfo">
-				<label for="phone">Phone Number</label>
-				<input type="tel" class="form-control" id="phone" >
-			  </div>	
-			  <div class="formInfo">
-				<label for="email">Email address</label>
-				<input type="email" class="form-control" id="email">
-			  </div>
-			  <div class="formInfo">
-				<label for="message">Your Message</label>
-				<textarea class="form-control" id="message" rows="3"></textarea>
-			  </div>
-			  <button type="submit" class="btn btn-default">Submit</button>
-			</form>
+		<div class="portfolioContainer container">
+			<h1 class="pageTitle">Portfolio</h1>
+			<div class="portThumbnail row">
+				<div class="col-xs-6">
+					<div class="pic">
+					<a href="dappleGray.html" class="grow darken">
+					<img src="img/califa.jpg" alt="Califa" />
+					</a>
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<div class="pic">
+					<a href="bellCanyon.html" class="grow darken">
+					<img src="img/bellfrontport.png" alt="Bell Canyon" />
+					</a>
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<div class="pic">
+					<a href="hamlin.html" class="grow darken">
+					<img src="img/dapplegray.jpg" alt="Dapplegray" />
+					</a>
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<div class="pic">
+					 <a href="califa.html" class="grow darken">
+					<img src="img/hamlin.jpg" alt="Hamlin" />
+					</a>
+					</div>
+				</div>
+    		</div>
 		</div>
-		<div class="myInfo">
-			<h2>Email</h2>
-			<a href="mailto:Nassery@ondevelopmenthomes.com">Nassery@ondevelopmenthomes.com</a><br/>
-			<img src="img/ondLogo.png" alt="logo" height="200" width="200" />
-			<h2>Phone</h2>
-			<h4>(818) 887-9390</h4>
-		</div>	
-	</div>
-
+		
 		<div class="footer">		
 			<div class="rowFooter">
     			<div class="col-sm-4 glyphicon glyphicon-earphone"> (818)887-9390</div>
