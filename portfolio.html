@@ -8,7 +8,9 @@
 				<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto+Condensed|Cinzel+Decorative">
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 				<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
+				<script src="js/bootstrap.youtubepopup.min.js"></script>
+				
+	
 </head>
 <style>
 	#logo {
@@ -60,6 +62,7 @@
 		background-color: #32415a;
 		text-align: center;
 		font-family: 'Roboto Condensed', sans-serif;
+		margin-top: 100px;
 	}
 	.footer p {
 		margin: 0 auto;
@@ -146,34 +149,60 @@
 		margin-bottom: 50px;
 		font-family: 'Roboto Condensed', sans-serif;
 	}
-	.portThumbnail {
-		margin-bottom: 80px;
+	
+	.pic {
+		border: 1px solid #fff;  
+		padding: 20px;
+	}
+	.pic img {
+		height: 300px;
+		width: 450px;
 	}
 	
-	.portThumbnail a.darken {
-		display: inline-block;
-		background: black;
-		padding: 0;
+	.folio span.rollover {
+		opacity: 0;
+		-o-transition-duration: 1s;
+		-moz-transition-duration: 1s;
+		-webkit-transition: -webkit-transform 1s;
+		background:url(img/start-128.png) center center no-repeat;
+		cursor: pointer;
+		height: 300px;
+		width: 450px;
+		position: absolute;
+		z-index: 10;
+		opacity: 0;
+		
 	}
 
-	.portThumbnail a.darken img {
-		display: block;
-
-		-webkit-transition: all 0.5s linear;
-		   -moz-transition: all 0.5s linear;
-			-ms-transition: all 0.5s linear;
-			 -o-transition: all 0.5s linear;
-				transition: all 0.5s linear;
+	.folio span.rollover:hover {
+		opacity: 0.8;
 	}
-
-	.portThumbnail a.darken:hover img {
-		opacity: 0.65;
-
+	.folio span {
+  	-webkit-transition: all 0.8s ease;
+     -moz-transition: all 0.8s ease;
+       -o-transition: all 0.8s ease;
+      -ms-transition: all 0.8s ease;
+          transition: all 0.8s ease;
 	}
-	.pic {
-		border: 4px solid #fff;  
-		overflow: hidden;
-		padding: 0px;
+ 
+	.folio span:hover {
+		
+	  -webkit-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+	}
+	#menuBar {
+		color: #fff;
+		font-size: 18px;
+		margin-left: 10px;
+	}
+	.navbar-toggle {
+		background-color: #3A5B92;
+		width: 100%;
+		text-align: center;
+		
 	}
 	
 </style>
@@ -184,6 +213,11 @@
 			<img src="img/onLogo.png" alt="ON Development" width="400" height="150"/>
 		</div>
 		<div class="navigation navbar-collapse collapse in">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span id="menuBar">Menu</span>
+				
+			  </button>
+			<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav nav-pills nav-justified">
 				<li><a href="index.html">Home</a></li>
 				<li class="active"><a href="portfolio.html">Portfolio</a></li>
@@ -191,31 +225,38 @@
 				<li><a href="contact.html">Contact</a></li>
 				<li><a href="newprojects.html">New Projects</a></li>
 			</ul>
+			</div>
 		</div>	
 		</div>
 	</div>
 		<div class="portfolioContainer container">
 			<h1 class="pageTitle">Portfolio</h1>
-			<div class="portThumbnail row">
-				<div class="col-xs-6 pic">
-					<a href="dappleGray.html" class=" darken">
-					<img src="img/califa.jpg" alt="Califa" />
-					</a>
+			<div class="row folio">
+				<div class="col-md-6 pic">
+					<a class="image"  href="#">
+						<span class="rollover youtube" rel="fUpt2JkoaEA"></span>
+						<img src="img/califa.jpg" alt="Califa" >			
+					</a>	
 				</div>
-				<div class="col-xs-6 pic">
-					<a href="bellCanyon.html" class="  darken">
-					<img src="img/bellfrontport.png" alt="Bell Canyon" />
-					</a>
+				<div class="col-md-6 pic">
+					<a class="image"  href="#">
+						<span class="rollover youtube" rel="v4978eYDHIw" title="Bell Canyon"></span>
+						<img src="img/bellfrontport.png" alt="Bell Canyon" >			
+					</a>	
 				</div>
-				<div class="col-xs-6 pic">
-					<a href="hamlin.html" class="  darken">
-					<img src="img/dapplegray.jpg" alt="Dapplegray" />
-					</a>
+			</div>
+				<div class="row folio">
+				<div class="col-md-6 pic">
+					<a class="image"  href="#">
+						<span class="rollover youtube" rel="QQjWe1pI2Fc"></span>
+						<img src="img/hamlin.jpg" alt="Hamlin" >			
+					</a>	
 				</div>
-				<div class="col-xs-6 pic">
-					 <a href="califa.html" class="  darken">
-					<img src="img/hamlin.jpg" alt="Hamlin" />
-					</a>
+				<div class="col-md-6 pic">
+					<a class="image"  href="http://54dapplegray.com" target="_blank">
+						<span class="rollover"></span>
+						<img src="img/dapplegray.jpg" alt="Dapplegray" />			
+					</a>	
 				</div>
     		</div>
 		</div>
@@ -230,9 +271,11 @@
 			</div>	
 		</div>
 	
-
+	
 	<script>
-		
+		$(function () {
+		$(".youtube").YouTubeModal({autoplay:0, width:600, height:450});
+	});
 	</script>
 </body>
 </html>

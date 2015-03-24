@@ -96,19 +96,16 @@
 		font-family: 'Roboto Condensed', sans-serif;
 	}
 	.contactForm {
-		width: 350px;
   		font-size: 20px;
-  		margin: 40px 80px 40px 20px;
-		float: left;
+		margin: 75px auto;
+  		
 	}
 	.contactForm input, textarea, button {
 		margin-bottom: 30px;
 	}
 	.myInfo {
-		margin: 40px 20px 40px 20px;
-  		float: left;
-  		width: 350px;
 		text-align: center;
+		margin: 75px auto;
 	}
 	.myInfo h2 {
 		margin-bottom: 30px;
@@ -117,9 +114,10 @@
 		text-decoration: none;
 		color: #3A5B92;
 		font-weight: bold;
-		padding:  8px 0;
-		display: block;
+		padding:  10px;
+		display: inline-block;
 		margin-bottom: 10px;
+		font-size: 20px;
 		
 	}
 	.myInfo a:hover {
@@ -129,10 +127,9 @@
 	}
 	.myInfo h4 {
 		color: #3A5B92;
+		font-size: 20px;
 	}
-	.pageTitle {
-		margin-bottom: 50px;
-	}
+
 
 </style>
 <body>
@@ -153,8 +150,8 @@
 		</div>
 	</div>
 	<div class="contactContainer container">
-		<h1 class="pageTitle">Contact Us</h1>
-		<div class="contactForm">
+		<h1>Contact Us</h1>
+		<div class="col-lg-6 contactForm">
 			<form>
 			  <div class="formInfo">
 				<label for="firstName">First Name</label>
@@ -179,7 +176,7 @@
 			  <button type="submit" class="btn btn-default">Submit</button>
 			</form>
 		</div>
-		<div class="myInfo">
+		<div class="col-lg-6 myInfo">
 			<h2>Email</h2>
 			<a href="mailto:Nassery@ondevelopmenthomes.com">Nassery@ondevelopmenthomes.com</a><br/>
 			<img src="img/ondLogo.png" alt="logo" height="200" width="200" />
