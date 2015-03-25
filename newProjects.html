@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>ON Development Homes</title>
+				<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+				<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto+Condensed|Cinzel+Decorative">
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+				<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+				<script src="js/bootstrap.youtubepopup.min.js"></script>
+				
+	
+</head>
+<style>
+	#logo {
+		float: left;
+		padding-right: 100px;
+		padding-top: 20px;
+		width: 100%;
+	}
+	.header {
+		padding-bottom: 50px;
+	}
+	.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+		color: #3A5B92;
+		background-color: white;
+		
+	}
+	.navigation li a {
+		color: #000000;
+		margin-right: 20px;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-family: 'Roboto Condensed', sans-serif;
+		font-size: 16px;
+	}
+	.navigation li a:hover {
+		color: #3A5B92;
+		background-color: white;
+		
+	}
+	.navigation {
+		padding-top: 80px;
+	}
+	.frontSlider {
+		width: 100%;
+		height: 100%;
+	}
+	.carousel-inner>.item {
+		transition: 1s ease-in-out left;
+	}
+	.mainContainer {
+		padding-bottom: 100px;		
+	}
+	.container {
+		padding-right: 40px;
+		padding-left: 40px;
+	}
+	.footer	{
+		color: white;
+		background-color: #32415a;
+		text-align: center;
+		font-family: 'Roboto Condensed', sans-serif;
+		margin-top: 100px;
+	}
+	.footer p {
+		margin: 0 auto;
+		padding: 12px 0;
+	}
+	.footer a {
+		color: white;
+		text-decoration:none;
+		font-weight: bold;
+	}
+	.footer a:hover {
+		text-decoration: underline;
+	}
+	.rowFooter {
+		padding: 40px 0 60px 0;
+	}
+	#aboutText {
+		width: 500px;
+		margin: 0 20px 50px 2px0;
+		float: left;
+		padding: 0 20px;
+		
+	}
+	#aboutImage img{
+		width: 400px;
+		height: 250px;
+		float: left;
+		margin: 0 40px 48px 40px;
+	}
+	#designStar:hover {
+		opacity: 0.7;
+		
+	}
+	.aboutMain {
+		margin: 20px;
+	}
+	.aboutMain p {
+		font-size: 18px;
+		margin: 50px 0;
+	}
+	.contactContainer {
+		min-height: 600px;
+		margin: 0 auto;
+		font-family: 'Roboto Condensed', sans-serif;
+	}
+	.contactForm {
+		width: 350px;
+  		font-size: 20px;
+  		margin: 40px 80px 40px 20px;
+		float: left;
+	}
+	.contactForm input, textarea, button {
+		margin-bottom: 30px;
+	}
+	.myInfo {
+		margin: 40px 20px 40px 20px;
+  		float: left;
+  		width: 350px;
+		text-align: center;
+	}
+	.myInfo h2 {
+		margin-bottom: 30px;
+	}
+	.myInfo a {
+		text-decoration: none;
+		color: #3A5B92;
+		font-weight: bold;
+		padding: 5px;
+		display: block;
+		margin-bottom: 10px;
+	}
+	.myInfo a:hover {
+		color: #fff;
+		background-color: #3A5B92;
+		margin-bottom: 10px;
+	}
+	.myInfo h4 {
+		color: #3A5B92;
+	}
+	.portfolioContainer {
+		min-height: 700px;
+	}
+	.pageTitle {
+		margin-bottom: 50px;
+		font-family: 'Roboto Condensed', sans-serif;
+	}
+	
+	.pic {
+		border: 1px solid #fff;  
+		padding: 20px;
+	}
+	.pic img {
+		height: 300px;
+		width: 450px;
+	}
+	
+	.folio span.rollover {
+		opacity: 0;
+		-o-transition-duration: 1s;
+		-moz-transition-duration: 1s;
+		-webkit-transition: -webkit-transform 1s;
+		background:url(img/start-128.png) center center no-repeat;
+		cursor: pointer;
+		height: 300px;
+		width: 450px;
+		position: absolute;
+		z-index: 10;
+		opacity: 0;
+		
+	}
+
+	.folio span.rollover:hover {
+		opacity: 0.8;
+	}
+	.folio span {
+  	-webkit-transition: all 0.8s ease;
+     -moz-transition: all 0.8s ease;
+       -o-transition: all 0.8s ease;
+      -ms-transition: all 0.8s ease;
+          transition: all 0.8s ease;
+	}
+ 
+	.folio span:hover {
+		
+	  -webkit-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+	}
+	#menuBar {
+		color: #fff;
+		font-size: 18px;
+		margin-left: 10px;
+	}
+	.navbar-toggle {
+		background-color: #3A5B92;
+		width: 100%;
+		text-align: center;
+		
+	}
+	.newProjectContainer img {
+		margin: 0 auto;
+	}
+	#newDescription {
+		font-size: 20px;
+		margin-top: 50px;
+	}
+</style>
+<body>
+	<div class="container">
+		<div class="header">
+		<div id="logo">
+			<img src="img/onLogo.png" alt="ON Development" width="400" height="150"/>
+		</div>
+		<div class="navigation navbar-collapse collapse in">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span id="menuBar">Menu</span>
+				
+			  </button>
+			<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav nav-pills nav-justified">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li class="active"><a href="newProjects.html">New Projects</a></li>
+			</ul>
+			</div>
+		</div>	
+		</div>
+	
+	<div class="newProjectContainer">
+			<h1 class="pageTitle">New Projects</h1>
+			<div class="col-lg-6">
+				<p id="newDescription">We are currently in the middle of renovating  a 1,160 square foot house that sits on a 8,374 square foot lot. We are expanding the square footage significantly by adding a master suite and master bathroom. Photos of the renovation will be uploaded soon. </p>
+			</div>
+			<div class="col-lg-6"><img src="img/comingsoon.jpg" width="300" height="300" class="img-responsive">
+			</div>
+	</div>
+	</div>
+		<div class="footer">		
+			<div class="rowFooter">
+    			<div class="col-sm-4 glyphicon glyphicon-earphone"> (310)428-3090</div>
+				<div class="col-sm-4">ON Development corp &nbsp; &copy; 2015 All Rights Reserved</div>
+				<div class="col-sm-4">
+				<a href="mailto:nassery@ondevelopmenthomes.com" class="glyphicon glyphicon-envelope"> Email Us</a>
+				</div>
+			</div>	
+		</div>
+	
+	
+	<script>
+		$(function () {
+		$(".youtube").YouTubeModal({autoplay:0, width:600, height:450});
+	});
+	</script>
+</body>
+</html>

@@ -60,7 +60,7 @@
 		background-color: #32415a;
 		text-align: center;
 		font-family: 'Roboto Condensed', sans-serif;
-		margin-top: 40px;
+		margin-top: 100px;
 	}
 	.footer p {
 		margin: 0 auto;
@@ -72,7 +72,7 @@
 		font-weight: bold;
 	}
 	.footer a:hover {
-		font-size: 16px;
+		text-decoration: underline;
 	}
 	.rowFooter {
 		padding: 40px 0 60px 0;
@@ -97,6 +97,10 @@
 		line-height: 35px;
 		margin-bottom: 40px;
 	}
+	#bio a {
+		color: #3A5B92;
+		font-weight: bold;
+	}
 	#bioName {
 		font-weight: bold;
 		font-size: 20px;
@@ -105,6 +109,17 @@
 	.bioImg {
 		margin: 0 auto;
 		border-radius: 10px;
+	}
+	#menuBar {
+		color: #fff;
+		font-size: 18px;
+		margin-left: 10px;
+	}
+	.navbar-toggle {
+		background-color: #3A5B92;
+		width: 100%;
+		text-align: center;
+		
 	}
 
 
@@ -116,18 +131,24 @@
 			<img src="img/onLogo.png" alt="ON Development" width="400" height="150"/>
 		</div>
 		<div class="navigation navbar-collapse collapse in">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span id="menuBar">Menu</span>
+				
+			  </button>
+			<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav nav-pills nav-justified">
 				<li><a href="index.html">Home</a></li>
 				<li><a href="portfolio.html">Portfolio</a></li>
 				<li class="active"><a href="about.html">About</a></li>
 				<li><a href="contact.html">Contact</a></li>
-				<li><a href="newprojects.html">New Projects</a></li>
+				<li><a href="newProjects.html">New Projects</a></li>
 			</ul>
+			</div>
 		</div>	
 		</div>
 		<div class="aboutMain">
 			<h1 class="pageTitle">About Us</h1>
-			<div class="col-lg-6" id="bio"><p><span id="bioName">Omar Nassery</span> is an architect and a licensed builder in Los Angeles, California. He studied architecture in Afghanistan and mechanical engineering in Poland. He obtained his contractor’s license in 1988.  He has designed and built numerous residential properties and commercial buildings throughout the Los Angeles area. His personal home which is located in Bell Canyon, California was among the winners of the Open Audition California: Selected Designs featured in Architectural Digest. He has worked on several prominent restaurant and bars in the Los Angeles area including 1200 Bar at the Sunset Marquis, Skybar at Mondrian, and Boulevard3 in Hollywood. He is also responsible for building the forty-one new villas along with Cavatina Restaurant at the Sunset Marquis Hotel and Villas.  </p>
+			<div class="col-lg-6" id="bio"><p><span id="bioName">Omar Nassery</span> is an architect and a licensed builder in Los Angeles, California. He studied architecture in Afghanistan and mechanical engineering in Poland. He obtained his contractors license in 1988.  He has designed and built numerous residential properties and commercial buildings throughout the Los Angeles area. His personal home which is located in Bell Canyon, California was among the winners of the Open Audition California: Selected Designs featured in Architectural Digest and also featured on <a href="https://youtu.be/xbddK91C2u4" target="_blank">HGTV's Design Star</a>.  He has worked on several prominent restaurant and bars in the Los Angeles area including 1200 Bar at the Sunset Marquis, Skybar at Mondrian, and Boulevard3 in Hollywood. He is also responsible for building the <a href="http://www.sunsetmarquis.com/category/villas" target="_blank">forty-one new villas</a> along with <a href="http://www.cavatinala.com/gallery" target="_blank">Cavatina Restaurant</a> at the Sunset Marquis Hotel and Villas. In 2007 he was involved in renovating <a href="http://www.nightbirdrecordingstudios.com/" target="_blank">NightBird</a> recording studio in West Hollywood.</p>
 			</div>
 			<div class="col-lg-6"><img src="img/IMG_0119.JPG" class="img-responsive bioImg"/>
 			</div>
@@ -136,7 +157,7 @@
 
 		<div class="footer">		
 			<div class="rowFooter">
-    			<div class="col-sm-4 glyphicon glyphicon-earphone"> (818)887-9390</div>
+    			<div class="col-sm-4 glyphicon glyphicon-earphone"> (310)428-3090</div>
 				<div class="col-sm-4">ON Development corp &nbsp; &copy; 2015 All Rights Reserved</div>
 				<div class="col-sm-4">
 				<a href="mailto:nassery@ondevelopmenthomes.com" class="glyphicon glyphicon-envelope"> Email Us</a>

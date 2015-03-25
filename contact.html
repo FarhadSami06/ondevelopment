@@ -71,7 +71,7 @@
 		font-weight: bold;
 	}
 	.footer a:hover {
-		font-size: 16px;
+		text-decoration: underline;
 	}
 	.rowFooter {
 		padding: 40px 0 60px 0;
@@ -129,6 +129,17 @@
 		color: #3A5B92;
 		font-size: 20px;
 	}
+	#menuBar {
+		color: #fff;
+		font-size: 18px;
+		margin-left: 10px;
+	}
+	.navbar-toggle {
+		background-color: #3A5B92;
+		width: 100%;
+		text-align: center;
+		
+	}
 
 
 </style>
@@ -139,13 +150,19 @@
 			<img src="img/onLogo.png" alt="ON Development" width="400" height="150"/>
 		</div>
 		<div class="navigation navbar-collapse collapse in">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span id="menuBar">Menu</span>
+				
+			  </button>
+			<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav nav-pills nav-justified">
 				<li><a href="index.html">Home</a></li>
 				<li><a href="portfolio.html">Portfolio</a></li>
 				<li><a href="about.html">About</a></li>
 				<li class="active"><a href="contact.html">Contact</a></li>
-				<li><a href="newprojects.html">New Projects</a></li>
+				<li><a href="newProjects.html">New Projects</a></li>
 			</ul>
+			</div>
 		</div>	
 		</div>
 	</div>
@@ -181,13 +198,13 @@
 			<a href="mailto:Nassery@ondevelopmenthomes.com">Nassery@ondevelopmenthomes.com</a><br/>
 			<img src="img/ondLogo.png" alt="logo" height="200" width="200" />
 			<h2>Phone</h2>
-			<h4>(818) 887-9390</h4>
+			<h4>(310)428-3090</h4>
 		</div>	
 	</div>
 
 		<div class="footer">		
 			<div class="rowFooter">
-    			<div class="col-sm-4 glyphicon glyphicon-earphone"> (818)887-9390</div>
+    			<div class="col-sm-4 glyphicon glyphicon-earphone"> (310)428-3090</div>
 				<div class="col-sm-4">ON Development corp &nbsp; &copy; 2015 All Rights Reserved</div>
 				<div class="col-sm-4">
 				<a href="mailto:nassery@ondevelopmenthomes.com" class="glyphicon glyphicon-envelope"> Email Us</a>
