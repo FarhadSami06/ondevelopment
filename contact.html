@@ -6,143 +6,12 @@
 				<title>ON Development Homes</title>
 				<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 				<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto+Condensed|Cinzel+Decorative">
+				<link rel="stylesheet" href="css/main.css" />
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 				<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
+				
 </head>
-<style>
-	#logo {
-		float: left;
-		padding-right: 100px;
-		padding-top: 20px;
-		width: 100%;
-	}
-	.header {
-		padding-bottom: 50px;
-	}
-	.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
-		color: #3A5B92;
-		background-color: white;
-		
-	}
-	.navigation li a {
-		color: #000000;
-		margin-right: 20px;
-		text-transform: uppercase;
-		font-weight: bold;
-		font-family: 'Roboto Condensed', sans-serif;
-		font-size: 16px;
-	}
-	.navigation li a:hover {
-		color: #3A5B92;
-		background-color: white;
-		
-	}
-	.navigation {
-		padding-top: 80px;
-	}
-	.frontSlider {
-		width: 100%;
-		height: 100%;
-	}
-	.carousel-inner>.item {
-		transition: 1s ease-in-out left;
-	}
-	.mainContainer {
-		padding-bottom: 100px;		
-	}
-	.container {
-		padding-right: 40px;
-		padding-left: 40px;
-	}
-	.footer	{
-		color: white;
-		background-color: #32415a;
-		text-align: center;
-		font-family: 'Roboto Condensed', sans-serif;
-	}
-	.footer p {
-		margin: 0 auto;
-		padding: 12px 0;
-	}
-	.footer a {
-		color: white;
-		text-decoration:none;
-		font-weight: bold;
-	}
-	.footer a:hover {
-		text-decoration: underline;
-	}
-	.rowFooter {
-		padding: 40px 0 60px 0;
-	}
-	#aboutText {
-		width: 500px;
-		margin: 0 20px 50px 2px0;
-		float: left;
-		padding: 0 20px;
-		
-	}
-	.aboutMain {
-		margin: 20px;
-	}
-	.aboutMain p {
-		font-size: 18px;
-		margin: 50px 0;
-	}
-	.contactContainer {
-		min-height: 600px;
-		margin: 0 auto;
-		font-family: 'Roboto Condensed', sans-serif;
-	}
-	.contactForm {
-  		font-size: 20px;
-		margin: 75px auto;
-  		
-	}
-	.contactForm input, textarea, button {
-		margin-bottom: 30px;
-	}
-	.myInfo {
-		text-align: center;
-		margin: 75px auto;
-	}
-	.myInfo h2 {
-		margin-bottom: 30px;
-	}
-	.myInfo a {
-		text-decoration: none;
-		color: #3A5B92;
-		font-weight: bold;
-		padding:  10px;
-		display: inline-block;
-		margin-bottom: 10px;
-		font-size: 20px;
-		
-	}
-	.myInfo a:hover {
-		color: #fff;
-		background-color: #3A5B92;
-		margin-bottom: 10px;
-	}
-	.myInfo h4 {
-		color: #3A5B92;
-		font-size: 20px;
-	}
-	#menuBar {
-		color: #fff;
-		font-size: 18px;
-		margin-left: 10px;
-	}
-	.navbar-toggle {
-		background-color: #3A5B92;
-		width: 100%;
-		text-align: center;
-		
-	}
 
-
-</style>
 <body>
 	<div class="container">
 		<div class="header">
@@ -169,28 +38,28 @@
 	<div class="contactContainer container">
 		<h1>Contact Us</h1>
 		<div class="col-lg-6 contactForm">
-			<form>
+			<form action="mail.php" method="POST">
 			  <div class="formInfo">
 				<label for="firstName">First Name</label>
-				<input type="text" class="form-control" id="firstName">
+				<input type="text" class="form-control" name="firstName">
 			  </div>
 			  <div class="formInfo">
 				<label for="lastName">Last Name</label>
-				<input type="text" class="form-control" id="lastName">
+				<input type="text" class="form-control" name="lastName">
 			  </div>
 			  <div class="formInfo">
 				<label for="phone">Phone Number</label>
-				<input type="tel" class="form-control" id="phone" >
+				<input type="tel" class="form-control" name="phone" >
 			  </div>	
 			  <div class="formInfo">
 				<label for="email">Email address</label>
-				<input type="email" class="form-control" id="email">
+				<input type="email" class="form-control" name="email">
 			  </div>
 			  <div class="formInfo">
 				<label for="message">Your Message</label>
-				<textarea class="form-control" id="message" rows="3"></textarea>
+				<textarea class="form-control" name="message" rows="3"></textarea>
 			  </div>
-			  <button type="submit" class="btn btn-default">Submit</button>
+			  <input type="submit" value="Submit" class="btn btn-default">
 			</form>
 		</div>
 		<div class="col-lg-6 myInfo">
