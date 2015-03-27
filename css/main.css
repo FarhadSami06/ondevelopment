@@ -74,12 +74,11 @@
 		font-size: 18px;
 	}
 	.pageTitle {
-		margin-bottom: 50px;
+		margin-bottom: 100px;
 		font-family: 'Roboto Condensed', sans-serif;
 	}
 		.contactContainer {
 		min-height: 600px;
-		margin: 0 auto;
 		font-family: 'Roboto Condensed', sans-serif;
 	}
 	.contactForm {
@@ -135,7 +134,7 @@
 		-o-transition-duration: 1s;
 		-moz-transition-duration: 1s;
 		-webkit-transition: -webkit-transform 1s;
-		background:url(../img/youtubeicon.png) center center no-repeat;
+		background:url(../img/youtubeicon.jpeg) center center no-repeat;
 		cursor: pointer;
 		height: 300px;
 		width: 450px;
@@ -182,7 +181,6 @@
 		border-radius: 10px;
 	}
 	.bottomContainer {
-		padding-bottom: 50px;
 		text-align: center;
 		font-family: 'Roboto Condensed', sans-serif;
 	}
@@ -199,10 +197,20 @@
 	}
 	.newProjectContainer img {
 		margin: 0 auto;
+		box-shadow: 0px 0px 16px #3A5B92;
 	}
 	#newDescription {
 		font-size: 20px;
-		margin-top: 50px;
+		padding: 25px;
+		text-align:justify;
+		margin-bottom: 40px;
 	}
-	
+	#contactTy {
+		text-align: center;
+		margin: 50px auto;
+		line-height: 75px;
+		font-family: 'Roboto Condensed', sans-serif;
+		padding: 50px;
+  		box-shadow: 0px 0px 20px #3A5B92;
+	}
 	

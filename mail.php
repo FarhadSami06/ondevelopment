@@ -7,15 +7,13 @@
 				<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 				<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto+Condensed|Cinzel+Decorative">
 				<link rel="stylesheet" href="css/main.css">
-				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-				<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
+	
 </head>
 <body>
 		<div class="container">
 		<div class="header">
 		<div id="logo">
-			<img src="img/onLogo.png" alt="ON Development" width="400" height="150"/>
+			<a href="index.html"><img src="img/onLogo.jpeg" alt="ON Development" class="img-responsive"/></a>
 		</div>
 		<div class="navigation navbar-collapse collapse in">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -148,12 +146,8 @@ $headers = 'From: '.$email_from."\r\n".
 @mail($email_to, $email_subject, $email_message, $headers);  
  
 ?>
-<!-- include your own success html here -->
- 
- 
- 
-<h2>Thank you for contacting us. We will be in touch with you very soon.</h2>
- 
+<h1 id="contactTy">Thank you for contacting us.<br> We will be in touch with you very soon.</h1>
+</div>
  
  
 <?php
@@ -170,5 +164,8 @@ $headers = 'From: '.$email_from."\r\n".
 				</div>
 			</div>	
 		</div>
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+				<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
 </body>
 </html>

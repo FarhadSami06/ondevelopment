@@ -1,3 +1,3 @@
 $(function () {
-		$(".youtube").YouTubeModal({autoplay:0, width:600, height:450});
+		$(".youtube").YouTubeModal({autoplay:0, width: 600, height: 450});
 	});
