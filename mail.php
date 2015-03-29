@@ -7,6 +7,7 @@
 				<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" defer>
 				<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto+Condensed|Cinzel+Decorative" defer>
 				<link rel="stylesheet" href="css/main.css" defer>
+				<link rel="shortcut icon" href="img/onicon.ico" defer/>
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" defer></script>
 				<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" defer></script>
 </head>
@@ -14,7 +15,7 @@
 		<div class="container">
 		<div class="header">
 		<div id="logo">
-			<a href="index.html"><img src="img/onLogo.jpeg" alt="ON Development" class="img-responsive"/></a>
+			<img src="img/onLogo.jpeg" alt="ON Development" class="img-responsive"/>
 		</div>
 		<div class="navigation navbar-collapse collapse in">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
