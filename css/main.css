@@ -159,6 +159,9 @@
 	.bottomContainer {
 		text-align: center;
 	}
+	.bottomContainer h3{
+		line-height: 35px;
+	}
 	#menuBar {
 		color: #fff;
 	}
